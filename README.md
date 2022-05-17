@@ -1,4 +1,6 @@
-# functions for all the basic math operators typically found on simple calculators
+# calculator implementing OOP and SOLID principles
+
+  #functions for all the basic math operators typically found on simple calculators
 
  	# Functions:
      Add
@@ -6,15 +8,15 @@
      multiply
      divide
 
-  # Function #operate that takes an operator and 2 numbers then calls one of the above functions on the numbers
+  #Function #operate that takes an operator and 2 numbers then calls one of the above functions on the numbers
 
-  # function that populates the display
+  #function that populates the display
   
-  # store the first number that is input into the calculator when a user presses an operator
+  #store the first number that is input into the calculator when a user presses an operator
 
-  # save which operation has been chosen and #operate() on then when the equal sign is pressed
+  #save which operation has been chosen and #operate() on then when the equal sign is pressed
 
-  # display is populated and updated with the solution to the operation once #operate() has been called
+  #display is populated and updated with the solution to the operation once #operate() has been called
 
   # Tests to pass
        # Users being able to string together several operations and get the right answer with each pair of numbers being evaluated at a time eg 12+7-5*3=42;
