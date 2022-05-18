@@ -2,7 +2,7 @@
 
   #functions for all the basic math operators typically found on simple calculators
 
- 	# Functions:
+ 	# operators:
      Add
      subtract
      multiply
