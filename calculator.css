@@ -28,8 +28,13 @@ body{
  width: 300px;
  height:70px;
  background-color: aliceblue;
- font-size: 2rem;
  margin-right: 1rem;
+}
+.num1{
+ font-size: 1.5rem;
+}
+.num2{
+ font-size: 2.5rem;
 }
 .backspace{
  font-size: 4rem;
@@ -41,10 +46,11 @@ body{
  border-style: none;
  color: black;
  border-radius: 20px;
- padding: 1rem;
  margin: 10px 10px;
  font-size: 1rem;
  cursor:pointer;
+ width:58px;
+ height:45px;
 }
 .btn:hover{
  background-color: black;

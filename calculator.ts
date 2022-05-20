@@ -1,6 +1,7 @@
 
 interface populateDisplay{
- data:number;
+ num1:any;
+ num2:number
 }
 class Calculator{
 
