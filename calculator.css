@@ -33,7 +33,7 @@ body{
 .num1{
  font-size: 1.5rem;
 }
-.num2{
+#result{
  font-size: 2.5rem;
 }
 .backspace{
@@ -51,6 +51,7 @@ body{
  cursor:pointer;
  width:58px;
  height:45px;
+ border:2px solid black;
 }
 .btn:hover{
  background-color: black;
