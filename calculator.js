@@ -4,31 +4,35 @@
 //clear the screen
 //backspace incase of a mistake
 // Applying solid principles
-const result = document.getElementById('result');
-class Calculator {
-    constructor() {
-        this.data = result.textContent;
+// const result = document.getElementById('result');
+var Calculator = /** @class */ (function () {
+    // class constructor:---
+    function Calculator() {
+        this.result = document.getElementById('result');
     }
-    displayNumber(data) {
-        this.data += data;
-    }
-    clearData() {
-        this.data = '';
-    }
-    backSpace() {
-        this.data = result.textContent.slice(0, -1);
-    }
-    compute() {
+    // class methods:----
+    Calculator.prototype.displayNumber = function (data) {
+        this.result.textContent += data;
+    };
+    Calculator.prototype.clearData = function () {
+        this.result.textContent = '';
+    };
+    Calculator.prototype.backSpace = function () {
+        this.result.textContent = this.result.textContent.slice(0, -1);
+    };
+    Calculator.prototype.compute = function () {
         try {
-            this.data = eval(result.textContent);
+            this.result.textContent = eval(this.result.textContent);
         }
         catch (error) {
             alert('invalid');
         }
-    }
-}
-const calc = new Calculator();
-calc.displayNumber('');
+    };
+    return Calculator;
+}());
+// instantiating 
+var calc = new Calculator();
+calc.displayNumber('0');
 calc.backSpace();
 calc.clearData();
 calc.compute();
