@@ -5,37 +5,49 @@
 //backspace incase of a mistake
  // Applying solid principles
 
-const result=document.getElementById('result');
+// const result = document.getElementById('result');
 
 
 
 class Calculator {
- data:any=result.textContent;
 
-  displayNumber(data){
-  this.data+=data;
+  // class data:----
+  private data: any;
+  private result: any;
+
+  // class constructor:---
+  constructor() {
+    this.result = document.getElementById('result');
+  }
+
+  // class methods:----
+  displayNumber(data:any){
+    this.result.textContent += data;
+  }
+
+  clearData(){
+    this.result.textContent = '';
+  }
+
+  backSpace(){
+    this.result.textContent = this.result.textContent.slice(0,-1);
+  }
+
+  compute(){
+    try {
+      this.result.textContent = eval(this.result.textContent);
+    } catch (error) {
+      alert('invalid');
+    }
+  
+  }
 }
 
- clearData(){
- this.data='';
-}
-
-backSpace(){
- this.data=result.textContent.slice(0,-1);
-}
-
-compute(){
- try {
-  this.data=eval(result.textContent);
- } catch (error) {
-  alert('invalid');
- }
- 
-}
-}
-
-const calc=new Calculator();
-calc.displayNumber('');
+// instantiating 
+let calc = new Calculator();
+calc.displayNumber('0');
 calc.backSpace();
 calc.clearData();
 calc.compute();
+
+
